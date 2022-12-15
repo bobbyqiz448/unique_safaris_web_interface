@@ -1,0 +1,580 @@
+:root{
+    --app-color: white;
+    --app-bgc:rgb(16, 216, 16);
+    --app-black: black;
+    --app-blue:rgb(23, 100, 201);
+}
+
+
+
+*{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-evenly;
+    /* width: 100%; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: rgb(23, 46, 68); */
+    color: var(--app-color);
+    background-color: transparent;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+    
+}
+main, body{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    /* background-color: green; */
+}
+#home0{
+    background-image: url("../imgs/hd-wallpaper-g700ecca06_1920.jpg");
+    background-position: cover;
+}
+
+#header{
+    width: 100%;
+}
+
+.slide-text{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-left: 50%;
+    width: 45%;
+    word-wrap: break-word;
+    height: 50%;
+    margin-top: -5%;
+}
+.slide-text>h1{
+    color: rgb(16, 216, 16);
+    font-weight:900;
+    font-size: 2.5em;
+}
+.slide-text>h2{
+    color: var(--app-color);
+    font-weight:800;
+    font-size: 1.5em;
+}
+.slide-text>p{
+    line-height: 30px;
+}
+.slide-text>button{
+    outline: none;
+    border: 1px solid black;
+    padding: 6px 12px 6px 12px;
+    background-color: var(--app-black);
+    font-size: 1.1em;
+}
+.slide-text>button:hover{
+    outline: none;
+    border: 1px solid black;
+    padding: 6px 12px 6px 12px;
+    background-color: var(--app-bgc);
+    color: var(--app-color);
+    font-size: 1.1em;
+}
+
+#brand, #right{
+    width: 50%  ;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+
+    /* justify-content: left; */
+}
+
+#header,#header>#right{
+    /* margin: 20px ; */
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    /* width: 100%; */
+}
+#header>#right>#navigation>ul{
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+#cart, #search{
+    width: 15%;
+}
+#header>#right>#navigation>ul>{
+    list-style: none;
+}
+#header>#right>#navigation>ul>li>a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--app-color);
+}
+#header>#right>#navigation>ul>li>a:hover{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--app-bgc);
+    /* text-decoration: underline; */
+    border-bottom: 2px solid var(--app-color);
+
+}
+#home{
+    height: 90vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* #search{
+
+    border: 1px solid red;
+}
+
+#cart{
+
+    border: 1px solid red;
+} */
+
+#navigation{
+    width: 70%;
+    /* border: 1px solid red; */
+    
+}
+
+.page{
+    background-color: var(--app-bgc);
+    color: var(--app-color);
+    height: fit-content;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+
+/* this is the abouts page */
+#about{
+    color: var(--app-bgc);
+    background-color: var(--app-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about>h2{
+    color: var(--app-bgc);
+    background-color: var(--app-color);
+    font-weight: 900;
+    font-size: 1.8em;
+}
+#about>#ideas{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+#ideas>.idea-container>img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+#ideas>.idea-container{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    height: 65vh;
+    max-width: 20%;
+    background-color: rgb(241, 227, 227);
+    border-radius: 8px;
+
+}
+#ideas>.idea-container:hover{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    height: 65vh;
+    max-width: 20%;
+    background-color: rgb(211, 197, 197);
+    z-index: 10;
+    box-shadow: 1px 2px 3px solid black;
+
+
+}
+/* #ideas>.idea-container>*{
+    background-color: rgb(241, 227, 227);
+} */
+.idea-container>.description{
+    color: var(--app-bgc);
+    background-color: var(--app-color);
+    /* background-color: rgb(241, 227, 227); */
+    background-color: inherit;
+    color: var(--app-blue);
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.idea-container>.story{
+    color: var(--app-bgc);
+    background-color: var(--app-color);
+    height: 20%;
+    overflow: hidden;
+    text-align: justify;
+    width: 80%;
+    /* background-color: rgb(241, 227, 227); */
+    background-color: inherit;
+    /* text-justify: distribute-all-lines; */
+}
+
+
+.idea-container>button{
+    color: var(--app-bgc);
+    background-color: var(--app-color);
+    outline: none;
+    border: 1px solid black;
+    padding: 6px 12px 6px 12px;
+    font-size: 1.1em;
+}
+
+.idea-container>button:hover{
+    outline: none;
+    border: 1px solid black;
+    padding: 6px 12px 6px 12px;
+    background-color: var(--app-black);
+    color: var(--app-bgc);
+    font-size: 1.1em;
+}
+
+
+
+/* shop page */
+
+#shop{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--app-blue);
+    min-height: 105vh;
+}
+#shop>h1{
+    height: 10%;
+    width: auto;
+
+}
+
+#products-pack{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    border-top: 1px solid var(--app-bgc);
+    background-color: var(--app-blue);
+    flex-wrap: wrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+        /* scrollbar-track-color: blue;
+        scrollbar-color: var(--app-blue); */
+}
+
+.product-container{
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20%;
+    height: 70%;
+    outline: 1px solid var(--app-blue);
+    color: var(--app-blue);
+    background-color: var(--app-color);
+    /* background-color: rgb(71, 199, 71); */
+}
+.product-container>*{
+    color: var(--app-blue);
+    font-weight: 600;
+}
+
+.product-container>.product-image>img{
+    width: 180px;
+    height: auto;
+}
+
+
+
+/* packages page */
+
+#packages{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 4vh auto 4vh auto;
+    /* border: 1px solid rgb(17, 5, 5); */
+
+
+}
+#packages{
+    background-color: #fff;
+}
+
+#packages>h1{
+    height: 10%;
+    margin: 4% auto 2% auto;
+    color: var(--app-bgc    );
+}
+
+#packages-pack{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    min-height: fit-content;
+    /* outline: 1px solid red; */
+    flex-wrap: wrap;
+    margin: 1% auto 5% auto;
+}
+.package-container{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 31%;
+    /* border: 1px solid blue; */
+    margin: 1% auto 1% auto;
+    background-color: lightgray;
+    border-radius: 4px;
+    color: var(--app-blue);
+}
+.package-container:hover{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 31%;
+    /* border: 1px solid blue; */
+    margin: 1% auto 1% auto;
+    background-color: rgb(236, 200, 200);
+    border-radius: 4px;
+    color: var(--app-blue);
+    
+}
+.package-container>.package-image{
+    width: 100%;
+    background-color: inherit;
+}
+
+.package-container>.package-image>img{
+    width: 90%;
+    border-radius: 8px;
+}
+.package-container>*{
+    font-weight: 400;
+    margin: 4% auto 0% auto;
+    width: 90%;
+    color: inherit;
+    background-color: inherit;
+}
+.package-container>*:last-child{
+    margin: 5% auto 8% auto;
+}
+.package-container>.name{
+    font-weight: 800;
+    font-size: 1.4em;
+}
+.package-container>.description{
+    text-align: justify;
+    text-justify: distribute-all-lines;
+}
+.package-container>.price{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: var(--app-bgc);
+}
+.package-container>button{
+    outline: none;
+    padding: 5px 12px 5px 12px;
+    width: fit-content  ;
+    border: 1px solid rgb(124, 121, 121);
+    background-color: darkgray;
+    font-size: 1.1em;
+
+}
+.package-container>button:hover{
+    outline: none;
+    padding: 5px 12px 5px 12px;
+    width: fit-content  ;
+    border: 1px solid black;
+    font-size: 1.1em;
+    background-color: var(--app-blue);
+    color: var(--app-color);
+}
+
+
+
+
+/* reviews page */
+#reviews{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+#reviews>h1{
+    height: 10%;
+    margin: 4% auto 3% auto
+}
+#reviews-pack{
+    height: 80%;
+    /* border: 1px solid red; */
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.review-container{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 31%;
+    height: fit-content;
+    background-color: rgb(17, 170, 17);
+
+}
+
+.review-container>.story{
+    width: 84%;
+    height: fit-content;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+    margin: 8% auto 8% auto;
+    background-color: green;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.review-container>.user{
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 80%;
+    height: max-content;
+    margin-bottom: 8%;
+}
+
+.review-container>.user>.image>img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.review-container>.user>.user-info{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: 10px;
+    height: 60px;
+    /* border: 1px solid red; */
+}
+
+.review-container>.user>.user-info>.name{
+    /* color: var(--app-blue); */
+    /* border: 1px solid red; */
+    font-weight: 600;
+}
+
+.review-container>.user>.user-info>.occupation{
+    font-size: .8em;
+    /* color: var(--app-blue); */
+    /* border: 1px solid red; */
+}
+
+
+
+
+
+
+
+/* footer secction */
+
+#footer{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 80vh;
+}
+
+
+
+#footer>#links-section{
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: inherit;
+    height: fit-content;
+    min-height: 80%;
+}
+
+#footer>#signature{
+    height: 10%;
+}
+
+#footer>#links-section>.column{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    /* height:fit-content; */
+    /* border: 1px solid red; */
+    height: 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+
+#footer>#links-section>.column>h2{
+    height: 10%;
+    min-width: 100%;
+    /* width: fit-content; */
+    text-align: center;
+    text-justify: auto;
+    /* border: 1px solid red; */
+    margin: 12% auto 0% auto;
+    /* padding: 12% auto 12% auto; */
+}
+#footer>#links-section>.column>.link-list{
+    height: 80%;
+    width: 100%;
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin: 2% auto 12% auto;
+}
+#footer>#links-section>.column>.link-list>ul{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-width: 100%;
+    /* width: fit-content; */
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+#footer>#links-section>.column>.link-list>ul>li{
+    margin: 5% auto 0px 30%;
+}
+
+#footer>#links-section>.column>.link-list>ul>li>a{
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+#footer>#links-section>.column>.link-list>ul>li>a:hover{
+    text-transform: capitalize;
+    color: var(--app-blue);
+    /* border-bottom: 2px solid var(--app-bgc); */
+    text-decoration: underline;
+    text-decoration-color: var(--app-bgc);
+    text-decoration-thickness: 2px;
+}
